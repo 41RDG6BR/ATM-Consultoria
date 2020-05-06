@@ -14,9 +14,11 @@ class BarraNavegacao extends React.Component {
   render(){
     if(this.props.voltar){
          return (
-          <View style={styles.barraTitulo}>
-          <TouchableHighlight
-            onPress={()=>{
+          <View style={[styles.barraTitulo, { backgroundColor: this.props.corDeFundo}]}>
+            <TouchableHighlight
+              underlayColor={this.props.corDeFundo}
+              activeOpacity={0.3}
+              onPress={()=>{
               this.props.navigator.pop()
             }}
           >
