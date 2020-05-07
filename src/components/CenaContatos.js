@@ -18,10 +18,9 @@ class CenaContatos extends React.Component {
             <StatusBar 
                 backgroundColor ='#61BD8C'
             />
-            <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#61BD8C'/>
-
+            <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#61BD8C' />
             <View style={styles.cabecalho}>
-            <Image source={detalheContatos} />
+                <Image source={detalheContatos} />
                 <Text style={styles.txtTitulo}>Contatos</Text>
             </View>
             <View style={styles.detalheContatos}>
@@ -30,8 +29,8 @@ class CenaContatos extends React.Component {
                 <Text style={styles.txtContatos}>EMAIL: contato@rdg.com</Text>
             </View>
         </View>
-        );
-    }
+    );
+  }
 }
 
 const styles = StyleSheet.create({

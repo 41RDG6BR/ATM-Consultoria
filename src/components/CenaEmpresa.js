@@ -15,25 +15,21 @@ const detalheEmpresa = require('../imgs/detalhe_empresa.png');
 export default class CenaEmpresa extends Component {
   render() {
     return (
-			<View style={{ flex: 1, backgroundColor: '#FFF' }}>
-        <StatusBar 
-          //hidden
-          backgroundColor='#EC7148'
-        />
-
-        <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#EC7148'/>
-
-        <View style={styles.cabecalho}>
-          <Image source={detalheEmpresa} />
-          <Text style={styles.txtTitulo}>A Empresa</Text>
-        </View>
-
-        <View style={styles.detalheEmpresa}>
-          <Text style={styles.txtEmpresa}>
-            A ATM Consultoria está no mercado a mais de 20 anos...
-          </Text>
-        </View>
-
+		<View style={{ flex: 1, backgroundColor: '#FFF' }}>
+            <StatusBar 
+            //hidden
+            backgroundColor='#EC7148'
+            />
+            <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#EC7148' />
+            <View style={styles.cabecalho}>
+                <Image source={detalheEmpresa} />
+                <Text style={styles.txtTitulo}>A Empresa</Text>
+            </View>
+            <View style={styles.detalheEmpresa}>
+                <Text style={styles.txtEmpresa}>
+                    A ATM Consultoria está no mercado a mais de 20 anos...
+                </Text>
+            </View>
       </View>
     );
   }

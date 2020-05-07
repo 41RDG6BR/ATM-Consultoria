@@ -21,13 +21,12 @@ class CenaClientes extends React.Component {
                 backgroundColor ='#B9C941'
             />
             <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#B9C941' />
-
             <View style={styles.cabecalho}>
-            <Image source={detalheClientes} />
+                <Image source={detalheClientes} />
                 <Text style={styles.txtTitulo}>Nossos clientes</Text>
             </View>
             <View style={styles.detalheCliente}>
-             <Image source={cliente1} />
+                <Image source={cliente1} />
                 <Text style={styles.txtDetalheCliente}>cliente1</Text> 
             </View>
            <View style={styles.detalheCliente}>

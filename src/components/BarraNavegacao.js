@@ -21,9 +21,9 @@ class BarraNavegacao extends React.Component {
               onPress={()=>{
               this.props.navigator.pop()
             }}
-          >
-            <Image source={btnVoltar} />
-          </TouchableHighlight>
+            > 
+              <Image source={btnVoltar} />
+            </TouchableHighlight>
               <Text style={styles.titulo}>ATM Consultoria</Text>
           </View>
         );

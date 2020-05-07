@@ -15,25 +15,21 @@ const detalheServico = require('../imgs/detalhe_servico.png');
 export default class CenaServico extends Component {
   render() {
     return (
-			<View style={{ flex: 1, backgroundColor: '#FFF' }}>
-        <StatusBar 
-          //hidden
-          backgroundColor='#19D1C8'
-        />
-
-        <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#19D1C8'/>
-
-        <View style={styles.cabecalho}>
-          <Image source={detalheServico} />
-          <Text style={styles.txtTitulo}>Nossos Serviços</Text>
-        </View>
-
-        <View style={styles.detalheServico}>
-          <Text style={styles.txtServico}>. Consultoria</Text>
-          <Text style={styles.txtServico}>. Processos</Text>
-          <Text style={styles.txtServico}>. Acompanhamento de Projetos</Text>
-        </View>
-
+		<View style={{ flex: 1, backgroundColor: '#FFF' }}>
+            <StatusBar 
+            //hidden
+            backgroundColor='#19D1C8'
+            />
+            <BarraNavegacao voltar navigator={this.props.navigator} corDeFundo='#19D1C8'/>
+            <View style={styles.cabecalho}>
+                <Image source={detalheServico} />
+                    <Text style={styles.txtTitulo}>Nossos Serviços</Text>
+            </View>
+            <View style={styles.detalheServico}>
+                <Text style={styles.txtServico}>. Consultoria</Text>
+                <Text style={styles.txtServico}>. Processos</Text>
+                <Text style={styles.txtServico}>. Acompanhamento de Projetos</Text>
+            </View>
       </View>
     );
   }
